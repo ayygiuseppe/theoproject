@@ -1,0 +1,687 @@
+/*
+Simple Responsive Template v 1.2
+
+
+primary styles 
+   Author: www.prowebdesign.ro
+   Add your own styles to customize the project.
+
+
+
+BASE (MOBILE) SIZE
+	These are the mobile styles. It's what people see on their phones.
+	Remember, keep it light: Speed is Important.
+*/
+
+/* typography */
+body{
+	color:#555;
+	font-family:'Ubuntu', Arial, Helvetica, sans-serif; 
+	font-size:1em;
+	line-height:1.25em; 
+	font-weight:normal;
+}
+h1, h2, h3, h4, h5, h6{
+	font-weight:normal;
+	font-family:'Droid Serif', Arial, Helvetica, sans-serif; 
+	line-height:1.25em;
+	margin:.45em 0;
+	padding:0;
+} 
+
+#mediumSize {
+	font-size: 1.5em;
+}
+
+#mediumSmallSize {
+	font-size: 1.25em;
+}
+
+#darkTextH {
+	color: #ffffff;
+	font-weight: bolder;
+}
+
+#darkTextP {
+	color: #ffffff;
+}
+
+#servicesList {
+	font-weight: bold;
+	margin: 2em 0;
+}
+
+
+/* links */
+a,
+a:visited,
+a:active,
+a:hover{color:#0099ff;}
+a:hover{ text-decoration:none;}
+
+
+/* Box sizing. Awesome thing. Read about it here: http://www.w3schools.com/cssref/css3_pr_box-sizing.asp */
+*{	box-sizing:border-box;
+	-moz-box-sizing:border-box;}
+
+  
+/* structure */   
+.wrapper{
+	width: 92%; 
+	margin: 0 auto;
+}
+header{ 
+	padding:15px 0;
+}
+#banner{ 
+	text-align:center;
+}
+	
+#hero,
+#page-header{
+	background-color: rgb(153,153,153);
+	background-image: url("splashImage.jpg");
+	background-position: center;
+	background-size: cover;
+	border-top:1px solid #e2e2e2;
+	border-bottom:1px solid #e2e2e2;
+	padding:20px 0;
+}
+#heroHome{
+	background-color: rgb(50,50,50);
+	background-position: center;
+	background-size: cover;
+	border-top:1px solid #e2e2e2;
+	border-bottom:1px solid #e2e2e2;
+	padding:20px 0;
+}
+#hero h1{ 
+	line-height:1.2em;
+	margin-top:0px;
+	margin-bottom:10px;
+}
+
+#content_page {  
+	margin:40px 0;
+}
+
+aside { 
+	margin:40px 0;
+}
+
+p{ margin:0 0 1.5em;}
+
+
+/* RESPONSIVE IMAGES */
+img{ max-width:100%; height:auto;}
+
+
+/*MAIN MENU*/
+.menu-toggle{
+	display:block;
+	padding:10px;
+	margin:20px 0 0;
+	background:#444;
+	color:#fff;
+	cursor:pointer;
+	text-transform:uppercase;
+	font-size:20px;
+}
+.menu-toggle.toggled-on{
+	background:#992C33;
+}
+.srt-menu{
+	display:none;
+}	
+.srt-menu.toggled-on{
+	display:block;
+	position:relative;
+	z-index:10;
+}
+
+.srt-menu{
+	clear:both;
+	margin-bottom:5px;
+}
+.srt-menu li a {
+	background:#444;
+	display:block;
+	margin:0px 0; 
+	padding:10px;
+	color: #fff;
+	font-weight: normal;
+	text-decoration: none;
+}
+.srt-menu li a:hover{
+	background:#ff4953;
+	color:#fff;
+}
+
+/*SPACE GRID ELEMENTS VERTICALLY, SINCE THEY ARE ONE UNDER ANOTHER SO FAR*/
+.grid_1,
+.grid_2,
+.grid_3,
+.grid_4,
+.grid_5,
+.grid_6,
+.grid_7,
+.grid_8,
+.grid_9,
+.grid_10,
+.grid_11,
+.grid_12 {
+	margin-bottom:40px;
+	/*positioning and padding*/
+	position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/*FOOTER*/
+footer{  
+	clear:both;
+	font-size:80%;
+	padding:20px 0;
+}
+footer ul{
+	margin:0;
+	padding:0;
+}
+
+/*colors and backgrounds*/
+body{
+	background:#fff;
+}
+h1, h2, h3, h4, h5, h6{
+	color:#333; 
+}
+
+footer{ 
+	background:#999;
+	color:#CCC;
+}
+footer h1, footer h2, footer h3, footer h4{ 
+	color:#fff; 
+	margin-bottom:10px;
+}
+footer ul{
+	margin:0 0 0 8%;
+}
+
+a.buttonlink{ /*button color for about us button on main page*/
+	background:#ff4953; 
+	border-radius:7px; 
+	color:#fff;
+	display:block;
+	float:left; 
+	margin:10px 15px 10px 0; 
+	padding:10px;
+	text-decoration:none;
+	text-align: center;
+
+}
+
+a.buttonlink:hover { /*hover color for about us button on home page main desc #8dbc01*/
+	background:#b36dff;
+}
+/*large button, "padding" to make it taller, left/right padding to make it longer*/
+#largeButton {
+	padding: 20px;
+	padding-left: 120px;
+	padding-right: 120px;
+	margin-left: 2.5em;
+	margin-right: 2.5em;
+}
+/*largest button, "padding" to make it taller, left/right padding to make it longer*/
+#largestButton {
+	padding: 20px;
+	padding-left: 120px;
+	padding-right: 120px;
+	margin: 1.5em;
+	background: white;
+	color: rgb(38, 106, 233);
+	font-size: larger;
+	font-weight: bold;
+}
+
+#largestButton:hover {
+	color: rgb(221, 60, 60)
+}
+
+.greenelement{
+	background:#5ec79e;
+	color:#fff;
+}
+.violetelement{
+	background:#887dc2;
+	color:#fff;
+}
+
+/*Timeline stuff*/
+.timeline {
+	position: relative;
+	max-width: 1200px;
+	margin: 0 auto;
+  }
+  
+  /* The actual timeline (the vertical ruler) */
+  .timeline::after {
+	content: '';
+	position: absolute;
+	width: 6px;
+	background-color: #333;
+	top: 0;
+	bottom: 0;
+	left: 50%;
+	margin-left: -3px;
+  }
+
+  .container {
+	padding: 10px 40px;
+	position: relative;
+	background-color: inherit;
+	width: 50%;
+  }
+  
+  /* The circles on the timeline */
+.container::after {
+	content: '';
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	right: -17px;
+	background-color: #333;
+	border: 4px solid #1e8888;
+	top: 15px;
+	border-radius: 50%;
+	z-index: 1;
+  }
+  
+  /* Place the container to the left */
+  .left {
+	left: 0;
+  }
+  
+  /* Place the container to the right */
+  .right {
+	left: 50%;
+  }
+  
+  /* Add arrows to the left container (pointing right) */
+  .left::before {
+	content: " ";
+	height: 0;
+	position: absolute;
+	top: 22px;
+	width: 0;
+	z-index: 1;
+	right: 30px;
+	border: medium solid #444;
+	border-width: 10px 0 10px 10px;
+	border-color: transparent transparent transparent #444;
+  }
+  
+  /* Add arrows to the right container (pointing left) */
+  .right::before {
+	content: " ";
+	height: 0;
+	position: absolute;
+	top: 22px;
+	width: 0;
+	z-index: 1;
+	left: 30px;
+	border: medium solid #444;
+	border-width: 10px 10px 10px 0;
+	border-color: transparent #444 transparent transparent;
+  }
+  
+  /* Fix the circle for containers on the right side */
+  .right::after {
+	left: -16px;
+  }
+  
+  /* The actual content */
+  .content {
+	padding: 20px 30px;
+	background-color: #444;
+	position: relative;
+	border-radius: 6px;
+  }
+
+/* Contain floats*/ 
+.clearfix:before,
+.clearfix:after,
+.row:before,
+.row:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after,
+
+.row:after{
+  clear: both;
+}
+
+
+/*
+LARGER MOBILE DEVICES
+This is for mobile devices with a bit larger screens.
+*/
+@media only screen and (min-width: 481px) {
+#banner{
+	float:left;
+	text-align:left;
+	margin-bottom:-20px;/*this depends on the height of the logo*/
+}
+.menu-toggle{/*make menu float right, instead of sitting under the logo*/
+	margin-top:5px; /*this depends on the height of the logo*/
+	float:right;
+}
+
+} 
+
+/*
+TABLET & SMALLER LAPTOPS
+The average viewing window and preferred media query for those is 768px.
+But I think that some more breathing space is good:)
+*/
+@media only screen and (min-width: 920px) {
+
+.wrapper{
+	max-width: 1200px; 
+	margin: .75em auto;
+}
+
+#banner{ 
+	float:left; 
+	text-align:left;
+	margin-bottom:0px;
+}
+header{
+	padding:0;
+}
+#content_page {  
+	float:left;
+	width:65%;
+}
+#content_page.wide-content{
+	float:none;
+	width:100%;
+}
+
+#contentList {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+aside { 
+	float:right;
+	width:30%;
+}
+
+/*** MAIN MENU - ESSENTIAL STYLES ***/
+.menu-toggle{display:none;}
+#menu-main-navigation{display:block;}
+
+.srt-menu, .srt-menu * {
+	margin:			0;
+	padding:		0;
+	list-style:		none;
+}
+.srt-menu ul {
+	position:		absolute;
+	display:none;
+	width:			12em; /* left offset of submenus need to match (see below) */
+}
+.srt-menu ul li {
+	width:			100%;
+}
+.srt-menu li:hover {
+	visibility:		inherit; /* fixes IE7 'sticky bug' */
+}
+.srt-menu li {
+	float:			left;
+	position:		relative;
+	margin-left:1px;
+}
+
+/*** DEMO1 SKIN ***/
+#topnav, .srt-menu {
+	float:right;
+	margin: .35em 0 0 0;
+}
+.srt-menu a {
+	text-decoration:none;
+}
+.srt-menu li a {
+	background:#fff;
+	margin:0; 
+	padding:10px 20px;
+	height:45px;
+	color:#000;
+}
+.srt-menu a, .srt-menu a:visited  { /* visited pseudo selector so IE6 applies text colour*/
+	color:			#000000;	
+}
+
+.srt-menu li.current * li a{
+	padding-left:20px;
+	background:rgba(0,0,0,.6);
+}
+
+.srt-menu li:hover > a,
+.srt-menu li.current a{ 
+	color:#fff;
+	background-color:#ff3845;
+}
+
+/*MODAL*/
+/* The Modal (background) */
+.modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 3; /* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+	background-color: #fefefe;
+	margin: 15% auto; /* 15% from the top and centered */
+	padding: 20px;
+	border: 1px solid #888;
+	width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+	color: #aaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+  }
+
+/*Buttons*/
+.button {
+	background-color: #4CAF50; /* Green */
+	border: none;
+	color: white;
+	padding: 16px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	transition-duration: 0.4s;
+	cursor: pointer;
+  }
+  
+  .button1 {
+	background-color: white; 
+	color: black; 
+	border: 2px solid #4CAF50;
+  }
+  
+  .button1:hover {
+	background-color: #4CAF50;
+	color: white;
+  }
+  
+  .button2 {
+	background-color: white; 
+	color: black; 
+	border: 2px solid #008CBA;
+  }
+  
+  .button2:hover {
+	background-color: #008CBA;
+	color: white;
+  }
+  
+  .button3 {
+	background-color: white; 
+	color: black; 
+	border: 2px solid #f44336;
+  }
+  
+  .button3:hover {
+	background-color: #f44336;
+	color: white;
+  }
+  
+  .button4 {
+	background-color: white;
+	color: black;
+	border: 2px solid #e7e7e7;
+  }
+  
+  .button4:hover {background-color: #e7e7e7;}
+  
+  .button5 {
+	background-color: #444;
+	color: white;
+	border: 2px solid #ffffff00;
+  }
+  
+  .button5:hover {
+	background-color: #555555;
+	color: white;
+  }
+
+/*GRID*/
+/*
+ & Columns : 12 
+
+ */
+ .row{
+	 margin-left: -15px;
+     margin-right: -15px;
+}
+ 
+.grid_1 { width: 8.33333333%; }
+.grid_2 { width: 16.66666667%; }
+.grid_3 { width: 25%; }
+.grid_4 { width: 33.33333333%; }
+.grid_5 { width: 41.66666667%; }
+.grid_6 { width: 50%; }
+.grid_7 { width: 58.33333333%; }
+.grid_8 { width: 66.66666667%; }
+.grid_9 { width: 75%; }
+.grid_10 { width: 83.33333333%; }
+.grid_11 { width: 91.66666667%; }
+.grid_12 { width: 100%; }
+
+.grid_1,
+.grid_2,
+.grid_3,
+.grid_4,
+.grid_5,
+.grid_6,
+.grid_7,
+.grid_8,
+.grid_9,
+.grid_10,
+.grid_11,
+.grid_12 {
+	float: left;
+	display: block;
+}
+
+.rightfloat{float:right;}
+/* @notation inspired by tinyGrid, .row and percentage by Twitter Bootstrap
+ */
+ 
+#hero [class*="grid_"] { margin-bottom:-20px;}
+
+}
+
+/*
+DESKTOP
+This is the average viewing window. So Desktops, Laptops, and
+in general anyone not viewing on a mobile device. Here's where
+you can add resource intensive styles.
+*/
+@media only screen and (min-width: 1030px) {
+
+} 
+
+/*
+LARGE VIEWING SIZE
+This is for the larger monitors and possibly full screen viewers.
+*/
+@media only screen and (min-width: 1240px) {
+
+} 
+
+/*
+RETINA (2x RESOLUTION DEVICES)
+This applies to the retina iPhone (4s) and iPad (2,3) along with
+other displays with a 2x resolution.
+*/
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+       only screen and (min--moz-device-pixel-ratio: 1.5),
+       only screen and (min-device-pixel-ratio: 1.5) {
+
+
+} 
+
+/*
+iPHONE 5 MEDIA QUERY
+iPhone 5 or iPod Touch 5th generation styles (you can include your own file if you want)
+*/
+@media (device-height: 568px) and (-webkit-min-device-pixel-ratio: 2) { 
+
+  
+}
+
+/*
+PRINT STYLESHEET
+*/
+@media print {
+  	* { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } /* Black prints faster: h5bp.com/s */
+  	a, a:visited { text-decoration: underline; }
+  	a[href]:after { content: " (" attr(href) ")"; }
+  	abbr[title]:after { content: " (" attr(title) ")"; }
+  	.ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }  /* Don't show links for images, or javascript/internal links */
+  	pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+  	thead { display: table-header-group; } /* h5bp.com/t */
+  	tr, img { page-break-inside: avoid; }
+  	img { max-width: 100% !important; }
+  	@page { margin: 0.5cm; }
+ 	 p, h2, h3 { orphans: 3; widows: 3; }
+  	h2, h3 { page-break-after: avoid; }
+}
